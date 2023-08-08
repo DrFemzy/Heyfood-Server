@@ -4,7 +4,7 @@ import { getPopularRestaurants, getRestaurants, uploadRestaurants } from "../con
 
 router.post("/", getRestaurants) 
 router.post("/upload", uploadRestaurants) 
-router.post("/popular", getPopularRestaurants)
+router.post("/sort", getPopularRestaurants)
 
 
 export default router
