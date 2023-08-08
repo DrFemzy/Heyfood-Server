@@ -76,7 +76,7 @@ export const getPopularRestaurants = async (req: Request, res: Response) => {
         case "Most Popular":
           restaurants = await Restaurant.find({}, null, {limit: perPage, skip: skip, sort: {popular : -1}})
           break;
-        case "Highest Rated":
+        case "Highest rated":
           restaurants = await Restaurant.find({}, null, {limit: perPage, skip: skip, sort: {"rating.rating" : -1}})
           break;
         case "Newest":
